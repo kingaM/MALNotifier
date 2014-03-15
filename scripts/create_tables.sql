@@ -23,6 +23,6 @@ CREATE TABLE IF NOT EXISTS `titles` (
     `titleId` INT NOT NULL AUTO_INCREMENT,
     `showId` INT NOT NULL,
     `title` VARCHAR(2000),
-    PRIMARY KEY(`showId`),
+    PRIMARY KEY(`titleId`),
     FOREIGN KEY (`showId`) REFERENCES `shows` (`showId`) ON DELETE CASCADE ON UPDATE CASCADE
 );
