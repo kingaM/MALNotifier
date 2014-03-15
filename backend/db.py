@@ -13,15 +13,15 @@ class DBHelper:
     except Exception, e:
         print e
 
-    def executeQuery(self, query):
+    def executeQuery(self, query, args):
         cursor = DBHelper.con.cursor()
-        cursor.execute(query)
+        cursor.execute(query, args)
         id = cursor.lastrowid
         cursor.close()
         DBHelper.con.commit()
         return id
 
-    def retrieveData(self, query):
+    def retrieveData(self, query, args):
         cursor = DBHelper.con.cursor()
         cursor.execute(query)
         rows = cursor.fetchall()
