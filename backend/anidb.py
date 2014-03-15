@@ -29,10 +29,10 @@ class AniDB:
         for child in root:
             id =  int(child.attrib['aid'])
             if id > lastId:
-                print "HERE: " + str(lastId)
                 db.executeQuery("INSERT INTO shows (showId) VALUES (" + str(id) + ")", ())
                 for title in child:
-                    if title.attrib['{http://www.w3.org/XML/1998/namespace}lang'] == "en":
+                    lang = title.attrib['{http://www.w3.org/XML/1998/namespace}lang']
+                    if (lang == "en") or (lang == "x-jat"):
                         db.executeQuery("INSERT INTO titles (showId, title) VALUES (" + str(id) + ", %s)", (title.text,))
 
 

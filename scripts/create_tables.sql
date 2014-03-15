@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 ); 
 
 CREATE TABLE IF NOT EXISTS `shows` (
-    `showId` INT NOT NULL AUTO_INCREMENT,
+    `showId` INT NOT NULL,
     `sequel` INT,
     PRIMARY KEY(`showId`)
 );
