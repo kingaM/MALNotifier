@@ -2,7 +2,7 @@
 #
 # from db import DBHelper
 # db = DBHelper()
-# print db.retrieveData("SELECT * FROM `users`")
+# print db.retrieveData("SELECT * FROM `users`", ())
 
 import MySQLdb as mdb
 
