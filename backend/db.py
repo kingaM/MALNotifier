@@ -13,7 +13,7 @@ class DBHelper:
     except Exception, e:
         print e
 
-    def executeQuery(self, query, args):
+    def executeQuery(self, query, args=()):
         cursor = DBHelper.con.cursor()
         cursor.execute(query, args)
         id = cursor.lastrowid
@@ -21,7 +21,7 @@ class DBHelper:
         DBHelper.con.commit()
         return id
 
-    def retrieveData(self, query, args):
+    def retrieveData(self, query, args=()):
         cursor = DBHelper.con.cursor()
         cursor.execute(query)
         rows = cursor.fetchall()
