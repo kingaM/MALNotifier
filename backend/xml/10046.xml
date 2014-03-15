@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<anime id="10046" restricted="false">
+<type>TV Series</type>
+<episodecount>0</episodecount>
+<startdate>2014</startdate>
+<titles>
+<title xml:lang="x-jat" type="main">Hanamonogatari</title>
+<title xml:lang="ja" type="official">花物語</title>
+<title xml:lang="zh-Hans" type="official">花物语</title>
+</titles>
+<relatedanime>
+<anime id="9183" type="Prequel">Monogatari Series: Second Season</anime>
+</relatedanime>
+<description>* Based on a series of light novels written by http://anidb.net/cr5970 [Nishio Ishin] and illustrated by http://anidb.net/cr6436 [Vofan].</description>
+<picture>147801.jpg</picture>
+</anime>

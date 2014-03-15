@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<anime id="10376" restricted="false">
+<type>TV Series</type>
+<episodecount>0</episodecount>
+<startdate>2014-07</startdate>
+<titles>
+<title xml:lang="x-jat" type="main">Sword Art Online II</title>
+<title xml:lang="x-jat" type="short">SAO 2</title>
+<title xml:lang="ja" type="official">ソードアート・オンラインII</title>
+</titles>
+<relatedanime>
+<anime id="10022" type="Prequel">Sword Art Online: Extra Edition</anime>
+</relatedanime>
+<url>http://www.swordart-online.net/</url>
+<creators>
+<name id="8068" type="Direction">Itou Tomohiko</name>
+<name id="28670" type="Original Work">Kawahara Reki</name>
+<name id="8899" type="Character Design">Adachi Shingo</name>
+<name id="1303" type="Animation Work">A-1 Pictures</name>
+</creators>
+<description>A year has passed since Sword Art Online was cleared. Kirito is asked by Kikuoka to investigate Gun Gale Online, specifically Death Gun, a weapon which seemed to link deaths in the virtual reality world to those in the real world. Upon entering the game, Kirito meets Sinon who teaches him the ropes around the game. They both enter the Gun Gale Online tournament, Bullet of Bullets. Kirito displays his amazing skills although he is only a newcomer to the game. As the story continues, Kirito finds out that the mysterious deaths were linked to a red guild named Laughing Coffin in SAO.</description>
+<picture>147919.jpg</picture>
+<resources>
+<resource type="1">
+<externalentity>
+<identifier>15804</identifier>
+</externalentity>
+</resource>
+<resource type="2">
+<externalentity>
+<identifier>21881</identifier>
+</externalentity>
+</resource>
+<resource type="4">
+<externalentity>
+<url>http://www.swordart-online.net/</url>
+</externalentity>
+</resource>
+<resource type="6">
+<externalentity>
+<identifier>Sword_Art_Online</identifier>
+</externalentity>
+</resource>
+</resources>
+<characters>
+<character id="46771" type="main character in" update="2012-10-13">
+<rating votes="31">7.10</rating>
+<name>Kirigaya Kazuto</name>
+<gender>male</gender>
+<charactertype id="1">Character</charactertype>
+<picture>126810.jpg</picture>
+<seiyuu id="20249" picture="52461.jpg">Matsuoka Yoshitsugu</seiyuu>
+</character>
+<character id="62712" type="main character in" update="2014-01-01">
+<rating votes="2">9.10</rating>
+<name>Kirito</name>
+<gender>male</gender>
+<charactertype id="1">Character</charactertype>
+<picture>147933.jpg</picture>
+<seiyuu id="20249" picture="52461.jpg">Matsuoka Yoshitsugu</seiyuu>
+</character>
+<character id="62713" type="main character in" update="2014-01-01">
+<rating votes="2">8.30</rating>
+<name>Sinon</name>
+<gender>female</gender>
+<charactertype id="1">Character</charactertype>
+<picture>147932.jpg</picture>
+<seiyuu id="38" picture="34272.jpg">Sawashiro Miyuki</seiyuu>
+</character>
+</characters>
+<episodes>
+<episode id="156950" update="2013-12-31">
+<epno type="4">T1</epno>
+<length>1</length>
+<airdate>2013-12-31</airdate>
+<title xml:lang="ja">告知PV</title>
+<title xml:lang="en">PV 01</title>
+</episode>
+</episodes>
+</anime>

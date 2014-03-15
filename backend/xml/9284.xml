@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<anime id="9284" restricted="false">
+<type>TV Series</type>
+<episodecount>13</episodecount>
+<startdate>2012-09-30</startdate>
+<enddate>2012-12-23</enddate>
+<titles>
+<title xml:lang="x-jat" type="main">Hiiro no Kakera Dai Ni Shou</title>
+<title xml:lang="x-jat" type="synonym">Hiiro no Kakera 2</title>
+<title xml:lang="ja" type="official">緋色の欠片 第二章</title>
+<title xml:lang="en" type="official">Hiiro no Kakera: The Tamayori Princess Saga 2</title>
+</titles>
+<relatedanime>
+<anime id="8840" type="Prequel">Hiiro no Kakera: Tamayori Hime Kitan</anime>
+<anime id="9614" type="Other">Hiiro no Kakera Taizen: Totsugeki! Tonari no Ikemens</anime>
+</relatedanime>
+<url>http://www.hiironokakera.tv/index2.html</url>
+<creators>
+<name id="7635" type="Chief Animation Direction">Aono Atsushi</name>
+<name id="11871" type="Chief Animation Direction">Haneda Kouji</name>
+<name id="6586" type="Chief Animation Direction">Kudou Yuka</name>
+<name id="8362" type="Chief Animation Direction">Okazaki Hiromi</name>
+<name id="2163" type="Chief Animation Direction">Onda Naoyuki</name>
+</creators>
+<description>After awakening her powers as Tamayori-hime, http://anidb.net/ch40708 [Tamaki] and her guardians had apparently succeeded in sealing away Onikirimaru. However, http://anidb.net/ch40711 [Takuma]`s body starts to change as the demon blood flowing through his veins consumes him. While the relationship of the guardians is undergoing stress, Logos resumes their activity once more.
+~ translated and adapted from official site by Cranston</description>
+<ratings>
+<permanent count="147">2.77</permanent>
+<temporary count="150">5.79</temporary>
+</ratings>
+<picture>126643.jpg</picture>
+<categories>
+<category id="535" parentid="7" hentai="false" weight="400">
+<name>Countryside</name>
+<description>The anime takes place far from the any densely populated areas like cities, i.e. out in the suburbs, in the countryside with many fields and forests.</description>
+</category>
+<category id="4" parentid="313" hentai="false" weight="100">
+<name>Action</name>
+<description>Action anime usually involve a fairly straightforward story of good guys versus bad guys, where most disputes are resolved by using physical force. It often contains a lot of shooting, explosions and fighting. </description>
+</category>
+<category id="486" parentid="4" hentai="false" weight="100">
+<name>Calling Your Attacks</name>
+<description>If you can do something more impressive than just throw a punch, your attack(s) must have an equally impressive name. More than that, you have to call it out as you launch the attack. It doesn`t matter if it`s a martial arts move, a magical spell or your secret superweapon, if you can`t say its name, it just isn`t nearly as cool or effective.</description>
+</category>
+<category id="198" parentid="313" hentai="false" weight="400">
+<name>Romance</name>
+<description>Romance describes a story that deals with love between two or more characters typically also having an optimistic ending. Romance is also a difficulty encountered when creating a harem.</description>
+</category>
+<category id="77" parentid="3" hentai="false" weight="600">
+<name>Shoujo</name>
+<description>In the context of manga and associated media, the word shoujo refers to a female audience roughly between the ages of 10 and 18. In Japanese, the word means simply "young female", and has no anime/manga-related connotations at all. It does not comprise a style or a genre per se, but rather indicates the publisher`s intended target demographic. Still, while not mandatory, some easily identifiable traits are generally common to shoujo works, such as: simple and often one-sided romance; the daily life and dreams of an average girl; common girls who suddenly develop or receive magical powers, thus becoming "magical girls" (see "mahou shoujo"). Additionally, the art style of shoujo tends to be rather flowery, and the plots tend to be less complex than josei, but neither of those is a requirement.</description>
+</category>
+<category id="293" parentid="269" hentai="false" weight="600">
+<name>Dating Sim - Visual Novel</name>
+<description>The two terms are similar yet different, however, the fact that they look and `feel` the same outweighs the technical differences. For clarification, visual novels are considered a sub-genre of adventure games and the term does not cover simulations. While the two genres often share a common visual presentation, dating sims are sometimes considered to be more statistically based than the "choose your own adventure" style of visual novels; basically, the choices you make might change something else than just the story arc (or your next porn pic). Dating sims can involve several technical elements such as a time limit, several statistics such as looks and charm which can be boosted through exercise, or an "attraction meter" which can increase or decrease depending on one`s decisions.</description>
+</category>
+<category id="11" parentid="6" hentai="false" weight="600">
+<name>Present</name>
+<description>Somewhere between past and future</description>
+</category>
+<category id="167" parentid="15" hentai="false" weight="200">
+<name>Demons</name>
+<description>Often described as minions from Hell. Generally known to attack humans and feast on their flesh or possess the bodies of those with weak souls.</description>
+</category>
+<category id="15" parentid="313" hentai="false" weight="200">
+<name>Fantasy</name>
+<description>Imaginative or fanciful work, especially one dealing with supernatural elements and themes.</description>
+</category>
+<category id="175" parentid="15" hentai="false" weight="400">
+<name>Magic</name>
+<description>In a traditional Fantasy anime with medieval setting, the lack of technology is "compensated" by the introduction of the supernatural, i.e. spell-casting, magic wands, and magic circles. &#13;
+&#13;
+In another setting long-lost technology may be so advanced that it is mistaken for magic (Arthur C. Clarke: "Any sufficiently advanced technology is indistinguishable from magic"). See also related tag: science and magic coexist.</description>
+</category>
+<category id="183" parentid="15" hentai="false" weight="600">
+<name>Contemporary Fantasy</name>
+<description>Magic and supernatural beings exist secretly in what is generally regarded as the real world. Such elements may have originated from another world. Stories where a modern-day character travels to an alternate fantasy world are not considered contemporary fantasy.</description>
+</category>
+<category id="23" parentid="22" hentai="false" weight="600">
+<name>Japan</name>
+<description>Last stronghold for humanity, if Tokyo falls, it`s all over. Tokyo Tower will undoubtedly fall anyway.</description>
+</category>
+<category id="289" parentid="7" hentai="false" weight="600">
+<name>Earth</name>
+<description>The Earth is the third planet from the Sun. It is a ball of hot mud, but on the surface it`s cold enough, so most of us live on it (or are supposed to). To its inhabitants, our planet is their home, so, as a species, we cherish it to the point many cultures even to this day deify it. The Earth is the main setting of most fiction, but many titles are set in other places, such as unrelated fantasy worlds, and in a considerable number of fictional titles the Earth is actually destroyed by invaders.</description>
+</category>
+<category id="22" parentid="289" hentai="false" weight="600">
+<name>Asia</name>
+<description>Asia is the world`s largest and most populous continent.</description>
+</category>
+<category id="233" parentid="216" hentai="false" weight="300">
+<name>Plot Continuity</name>
+<description>Consistency of the characteristics of persons, plot, objects, places and events seen by the viewer.&#13;
+&#13;
+A single linear focused plot is highly continuous.&#13;
+&#13;
+A truly random plot is highly discontinuous.</description>
+</category>
+<category id="239" parentid="21" hentai="false" weight="300">
+<name>High School</name>
+<description>The upper-secondary education (not compulsory in Japan) covers the grades ten, eleven, and twelve. The students are typically fifteen to eighteen years old.&#13;
+&#13;
+Anime centre on High School settings predominately: Plot/story-wise the coming of age is of interest - the students are almost adults (their bodies have matured, see ecchi anime) with more earnest, real-life problems.</description>
+</category>
+<category id="21" parentid="317" hentai="false" weight="300">
+<name>School Life</name>
+<description>Since a large part of the anime audience still takes part in school life or is visiting college, it is only natural to choose a setting the audience can identify with, be it elementary, middle, or high school. For the older viewers a college setting with more mature real-life problems is appropriate. And since clubs take up so much time in the lives of students, these are obviously also important.</description>
+</category>
+<category id="343" parentid="318" hentai="false" weight="400">
+<name>Bishounen</name>
+<description>Young man whose beauty (and sexual appeal) transcends the boundary of gender or sexual orientation.</description>
+</category>
+<category id="282" parentid="313" hentai="false" weight="300">
+<name>Ecchi</name>
+<description>Ecchi, or etchi (エッチ), is a common Japanese word meaning "indecent", "lewd", "frisky" or "sexy"; its usage can be compared to the English word "naughty". Among western anime fans, the term is used when vague sexual content, such as skimpy clothing or nudity, is prominent. In Japanese, however, it is a catch-all term for all things anyhow sexual in nature, mild or otherwise.</description>
+</category>
+<category id="421" parentid="241" hentai="false" weight="600">
+<name>Reverse Harem</name>
+<description>The gender-reversed version of the usual harem genre. In a reverse harem, instead of several female characters focused on one male character, the viewer sees several male characters surrounding a single female character. The most notable characteristic exclusive to reverse harem is the tendency towards bishounen looks. Homosexual relationships are not covered by reverse harem.</description>
+</category>
+<category id="241" parentid="313" hentai="false" weight="600">
+<name>Harem</name>
+<description>Three or more characters, generally female, are under the influence of one character, normally male. Their interactions are romantically or sexually loaded. The female characters often draw heavily from stock archetypes. Sexual tones are applied to the lead`s behavior and to the members` depiction. The lead will often be physically abused for his behavior. The harem may be only a support to an existing or predictable relationship, or the lead may end up in relationships with most or all members.</description>
+</category>
+<category id="482" parentid="175" hentai="false" weight="200">
+<name>Magic Circles</name>
+<description>A circle used to contain magical energy and/or to provide magical protection. It can be drawn (with chalk etc.) or it can just spontaneously appear as part of the spell/ritual.</description>
+</category>
+<category id="374" parentid="282" hentai="false" weight="100">
+<name>Skimpy Clothing</name>
+<description>When a job needs to get done you need the appropriate clothing on the appropriate persons. That calls for preferably scantily clad young ladies. Spies will dress in sexy outfits, even when the mission explicitly calls for them to not to be noticed. Female warriors will charge into battle wearing armour that does not protect the vital organs. Bridge officers on a military starship will be issued go-go boots with their uniforms. Examples are the women in VanDread, AIKa or the most famous incarnation of that tag, the Strike Witches and their precursor the Sky Girls.</description>
+</category>
+<category id="507" parentid="15" hentai="false" weight="200">
+<name>Ghost</name>
+<description>Ethereal being, mostly transparent, usually does not interact with matter (e.g. can pass through walls). Remnant "essence" of a human being that cannot pass to the spirit world for some reason, e.g. a traumatic death traps the ghost to a certain place on Earth.</description>
+</category>
+</categories>
+<resources>
+<resource type="1">
+<externalentity>
+<identifier>14733</identifier>
+</externalentity>
+</resource>
+<resource type="2">
+<externalentity>
+<identifier>14645</identifier>
+</externalentity>
+</resource>
+<resource type="3">
+<externalentity>
+<identifier>5158</identifier>
+<identifier>vagmsj</identifier>
+</externalentity>
+</resource>
+<resource type="4">
+<externalentity>
+<url>http://www.ytv.co.jp/hiiro/</url>
+</externalentity>
+<externalentity>
+<url>http://www.hiironokakera.tv/index2.html</url>
+</externalentity>
+</resource>
+<resource type="6">
+<externalentity>
+<identifier>Hiiro_no_Kakera_(TV_series)</identifier>
+</externalentity>
+</resource>
+<resource type="7">
+<externalentity>
+<identifier>緋色の欠片</identifier>
+</externalentity>
+</resource>
+<resource type="8">
+<externalentity>
+<identifier>2734</identifier>
+</externalentity>
+</resource>
+<resource type="9">
+<externalentity>
+<identifier>343739</identifier>
+</externalentity>
+</resource>
+<resource type="10">
+<externalentity>
+<identifier>15202</identifier>
+</externalentity>
+</resource>
+</resources>
+<tags>
+<tag id="5324" approval="1" spoiler="false" localspoiler="false" globalspoiler="false" update="2013-11-23">
+<name>beautiful people club</name>
+<count>67</count>
+<description>Most, if not all, characters in this show are good-looking. After all, who needs ugly people? We don`t need them here, that`s for certain; as Brazilian poet Vinícius de Moraes once put, "may the ugly women forgive me, but beauty is essential".</description>
+</tag>
+<tag id="5697" approval="1" spoiler="false" localspoiler="false" globalspoiler="false" update="2009-12-24">
+<name>CGI</name>
+<count>217</count>
+<description>Computer animation is the art of creating moving images via the use of computers. It is a subfield of computer graphics and animation. Increasingly it is created by means of 3D computer graphics, though 2D computer graphics are still widely used for stylistic, low bandwidth, and faster real-time rendering needs. Sometimes the target of the animation is the computer itself, but sometimes the target is another medium, such as film. It is also referred to as CGI (Computer-generated imagery or computer-generated imaging), especially when used in films.</description>
+</tag>
+<tag id="645" approval="1" spoiler="false" localspoiler="false" globalspoiler="false" update="2009-05-22">
+<name>comic relief animal sidekick</name>
+<count>228</count>
+<description>Every mahou shoujo anime needs them, the cute little critters that are supposed to help the protagonists but in reality are nothing but useless bystanders most often abused for gags. Kids love them but they can also often turn into an annoyance.</description>
+</tag>
+<tag id="6458" approval="1" spoiler="false" localspoiler="false" globalspoiler="false" update="2014-01-06">
+<name>post-credits scene</name>
+<count>150</count>
+<description>A little bit of the story is found after the credit titles. A little bonus for those patient enough!</description>
+</tag>
+<tag id="733" approval="1" spoiler="false" localspoiler="false" globalspoiler="false" update="2009-05-28">
+<name>funky German</name>
+<count>48</count>
+<description>Someone or something speaks German in a hilarious way, e.g. the voice feedback of a magical weapon.</description>
+</tag>
+<tag id="2647" approval="1" spoiler="false" localspoiler="false" globalspoiler="false" update="2014-02-20">
+<name>indecisive female lead</name>
+<count>14</count>
+<description>The female lead in the anime has difficulty making decisions.
+Example: In a love polygon not being able to choose the one she really loves, holding back, thus hurting everyone involved.
+Note: Might be a cheap plot device, to simply drag out the anime length, instead of resolving the issue in a timely manner.</description>
+</tag>
+<tag id="818" approval="1" spoiler="false" localspoiler="false" globalspoiler="false" update="2008-06-08">
+<name>Japanese culture</name>
+<count>24</count>
+</tag>
+<tag id="1734" approval="1" spoiler="false" localspoiler="false" globalspoiler="false" update="2009-10-28">
+<name>klutz</name>
+<count>125</count>
+<description>As part of the slapstick comedy in anime there often is a character (usually female), who is particularly clumsy, i.e. tripping, bumping into objects, or dropping things. This lack of physical coordination is thought of as endearing.</description>
+</tag>
+<tag id="177" approval="1" spoiler="false" localspoiler="false" globalspoiler="false" update="2011-04-07">
+<name>protection complex</name>
+<count>84</count>
+<description>A main character will be practically obsessed with the protection of one or more other characters. This desire to protect may be so strong, it could unconsciously subject and influence the character`s attitude and behaviour towards situations or other people in general. The obsessive protector will feel it is their mission in life to protect the other character, possibly viewing themselves as worthless or a failure if that single duty is to be slightly off from perfection.</description>
+</tag>
+<tag id="497" approval="1" spoiler="false" localspoiler="false" globalspoiler="false" update="2008-06-03">
+<name>supernatural</name>
+<count>177</count>
+<description>Things happen in this anime that seem to be beyond nature or physical laws.
+Examples: Ghosts, vampires, monsters, telepathy, telekinesis, etc.</description>
+</tag>
+<tag id="3010" approval="1" spoiler="false" localspoiler="false" globalspoiler="false" update="2009-05-24">
+<name>traditional Japanese mythology</name>
+<count>10</count>
+</tag>
+<tag id="4198" approval="1" spoiler="false" localspoiler="false" globalspoiler="false" update="2009-01-20">
+<name>youkai</name>
+<count>51</count>
+<description>Youkai are a class of obake, creatures in Japanese folklore ranging from the evil oni (ogre) to the mischievous kitsune (fox) or snow woman Yuki-onna. Some possess part animal and part human features (e.g. Kappa and Tengu). Youkai generally have a sort of spiritual or supernatural power, and so encounters with human beings tend to be dangerous. Yōkai also have different motives and agendas from human beings, which are often completely incomprehensible. (Source: Wikipedia)</description>
+</tag>
+<tag id="5152" approval="1" spoiler="false" localspoiler="false" globalspoiler="false" update="2012-02-10">
+<name>bodyguard</name>
+<count>16</count>
+<description>A bodyguard (or close protection officer) is a type of security operative or government agent who protects a person — usually a famous, wealthy, or politically important figure — from assault, kidnapping, assassination, stalking, loss of confidential information, terrorist attack or other threats.
+(Source: Wikipedia)</description>
+</tag>
+<tag id="7198" approval="1" spoiler="false" localspoiler="false" globalspoiler="false" update="2012-10-10">
+<name>traitor</name>
+<count>2</count>
+</tag>
+</tags>
+<characters>
+<character id="40707" type="main character in" update="2012-03-07">
+<rating votes="3">2.79</rating>
+<name>Oomi Suguru</name>
+<gender>male</gender>
+<charactertype id="1">Character</charactertype>
+<picture>83030.jpg</picture>
+<seiyuu id="99" picture="139554.jpg">Hirakawa Daisuke</seiyuu>
+</character>
+<character id="40708" type="main character in" update="2012-03-07">
+<rating votes="6">4.51</rating>
+<name>Kasuga Tamaki</name>
+<gender>female</gender>
+<charactertype id="1">Character</charactertype>
+<picture>83026.jpg</picture>
+<seiyuu id="12598" picture="74984.jpg">Miyake Marie</seiyuu>
+</character>
+<character id="40709" type="main character in" update="2012-03-07">
+<rating votes="2">1.58</rating>
+<name>Inukai Shinji</name>
+<gender>male</gender>
+<charactertype id="1">Character</charactertype>
+<picture>83031.jpg</picture>
+<seiyuu id="18131" picture="21316.jpg">Shimowada Hiroki</seiyuu>
+</character>
+<character id="40710" type="main character in" update="2012-03-07">
+<rating votes="6">3.26</rating>
+<name>Komura Yuuichi</name>
+<gender>male</gender>
+<charactertype id="1">Character</charactertype>
+<picture>83029.jpg</picture>
+<seiyuu id="265" picture="25730.jpg">Namikawa Daisuke</seiyuu>
+</character>
+<character id="40711" type="main character in" update="2012-03-07">
+<rating votes="6">4.45</rating>
+<name>Onizaki Takuma</name>
+<gender>male</gender>
+<charactertype id="1">Character</charactertype>
+<picture>83027.jpg</picture>
+<seiyuu id="45" picture="44970.jpg">Sugita Tomokazu</seiyuu>
+</character>
+<character id="40712" type="main character in" update="2012-03-07">
+<rating votes="3">2.79</rating>
+<name>Atori Mahiro</name>
+<gender>male</gender>
+<charactertype id="1">Character</charactertype>
+<picture>83028.jpg</picture>
+<seiyuu id="389" picture="56097.jpg">Okano Kousuke</seiyuu>
+</character>
+<character id="41561" type="secondary cast in" update="2012-03-07">
+<rating votes="2">1.58</rating>
+<name>Ein</name>
+<gender>male</gender>
+<charactertype id="1">Character</charactertype>
+<picture>83033.jpg</picture>
+<seiyuu id="64" picture="16667.jpg">Yasumoto Hiroki</seiyuu>
+</character>
+<character id="41562" type="secondary cast in" update="2012-03-07">
+<rating votes="4">1.86</rating>
+<name>Aria</name>
+<gender>female</gender>
+<charactertype id="1">Character</charactertype>
+<picture>83032.jpg</picture>
+<seiyuu id="10361" picture="38073.jpg">Isomura Tomomi</seiyuu>
+</character>
+<character id="41563" type="secondary cast in" update="2012-03-07">
+<name>Osaki Kitsune</name>
+<gender>unknown</gender>
+<charactertype id="1">Character</charactertype>
+<picture>83040.jpg</picture>
+<seiyuu id="29400" picture="76981.jpg">Yamaguchi Rikako</seiyuu>
+</character>
+<character id="41564" type="secondary cast in" update="2012-03-07">
+<name>Zwei</name>
+<gender>male</gender>
+<charactertype id="1">Character</charactertype>
+<picture>83034.jpg</picture>
+<seiyuu id="5040" picture="88977.jpg">Kawahara Yoshihisa</seiyuu>
+</character>
+<character id="41565" type="secondary cast in" update="2012-03-07">
+<rating votes="2">1.58</rating>
+<name>Drei</name>
+<gender>male</gender>
+<charactertype id="1">Character</charactertype>
+<picture>83035.jpg</picture>
+<seiyuu id="31" picture="65365.jpg">Ueda Youji</seiyuu>
+</character>
+<character id="41566" type="secondary cast in" update="2012-03-07">
+<rating votes="1">6.09</rating>
+<name>Vier</name>
+<gender>female</gender>
+<charactertype id="1">Character</charactertype>
+<picture>82615.jpg</picture>
+<seiyuu id="74" picture="84835.jpg">Oohara Sayaka</seiyuu>
+</character>
+<character id="41567" type="secondary cast in" update="2012-12-07">
+<rating votes="1">6.09</rating>
+<name>Takara Kiyono</name>
+<gender>female</gender>
+<charactertype id="1">Character</charactertype>
+<description>Takara Kiyono is a classmate and a friend of Tamaki.
+Later in the second season is revealed that she is not 17 but 23 years old and works for Bureau so http://anidb.net/ch42133 [Ashiya Masataka] isn`t her uncle but her boss.</description>
+<picture>83039.jpg</picture>
+<seiyuu id="20025" picture="132938.jpg">Mimori Suzuko</seiyuu>
+</character>
+<character id="41568" type="secondary cast in" update="2012-03-07">
+<name>Ugaya Shizuki</name>
+<gender>female</gender>
+<charactertype id="1">Character</charactertype>
+<picture>83036.jpg</picture>
+<seiyuu id="19174" picture="50012.jpg">Kubota Tamie</seiyuu>
+</character>
+<character id="41569" type="secondary cast in" update="2012-03-07">
+<rating votes="1">6.09</rating>
+<name>Kotokura Mitsuru</name>
+<gender>female</gender>
+<charactertype id="1">Character</charactertype>
+<picture>83037.jpg</picture>
+<seiyuu id="24134" picture="68508.jpg">Aikawa Chihiro</seiyuu>
+</character>
+<character id="41570" type="secondary cast in" update="2012-05-21">
+<rating votes="1">7.38</rating>
+<name>Kutani Ryou</name>
+<gender>male</gender>
+<charactertype id="1">Character</charactertype>
+<picture>5001.png</picture>
+<seiyuu id="31633" picture="85121.jpg">Nomiya Kazunori</seiyuu>
+</character>
+<character id="42133" type="secondary cast in" update="2012-03-07">
+<rating votes="2">1.58</rating>
+<name>Ashiya Masataka</name>
+<gender>male</gender>
+<charactertype id="1">Character</charactertype>
+<picture>83038.jpg</picture>
+<seiyuu id="5887" picture="30431.jpg">Nagano Yoshikazu</seiyuu>
+</character>
+<character id="49795" type="appears in" update="2012-10-10">
+<name>Inukai Shinji (Youshou-Ji)</name>
+<gender>male</gender>
+<charactertype id="1">Character</charactertype>
+<picture>126704.jpg</picture>
+<seiyuu id="2505" picture="141583.jpg">Makiguchi Mayuki</seiyuu>
+</character>
+</characters>
+<episodes>
+<episode id="144387" update="2012-09-28">
+<epno type="1">4</epno>
+<length>25</length>
+<airdate>2012-10-21</airdate>
+<title xml:lang="ja">五家の崩壊</title>
+<title xml:lang="en">The Destruction of the Five Houses</title>
+<title xml:lang="x-jat">Goke no Houkai</title>
+</episode>
+<episode id="144388" update="2012-09-28">
+<epno type="1">3</epno>
+<length>25</length>
+<airdate>2012-10-14</airdate>
+<title xml:lang="ja">裏切りの契</title>
+<title xml:lang="en">The Traitor`s Vow</title>
+<title xml:lang="x-jat">Uragiri no Chigiri</title>
+</episode>
+<episode id="144389" update="2012-09-28">
+<epno type="1">2</epno>
+<length>25</length>
+<airdate>2012-10-07</airdate>
+<title xml:lang="ja">暗雲の予兆</title>
+<title xml:lang="en">Ominous Dark Clouds</title>
+<title xml:lang="x-jat">An`un no Yochou</title>
+</episode>
+<episode id="144390" update="2012-09-28">
+<epno type="1">1</epno>
+<length>25</length>
+<airdate>2012-09-30</airdate>
+<title xml:lang="ja">玉依の運命</title>
+<title xml:lang="en">The Tamayori`s Fate</title>
+<title xml:lang="x-jat">Tamayori no Sadame</title>
+</episode>
+<episode id="144688" update="2012-10-09">
+<epno type="3">C2</epno>
+<length>2</length>
+<airdate>2012-09-30</airdate>
+<title xml:lang="en">Ending</title>
+</episode>
+<episode id="144689" update="2012-10-09">
+<epno type="3">C1</epno>
+<length>2</length>
+<airdate>2012-09-30</airdate>
+<title xml:lang="en">Opening</title>
+</episode>
+<episode id="144924" update="2012-10-24">
+<epno type="1">8</epno>
+<length>25</length>
+<airdate>2012-11-18</airdate>
+<title xml:lang="ja">二人の決心</title>
+<title xml:lang="en">Their Resolution</title>
+<title xml:lang="x-jat">Futari no Kesshin</title>
+</episode>
+<episode id="144925" update="2012-10-24">
+<epno type="1">7</epno>
+<length>25</length>
+<airdate>2012-11-11</airdate>
+<title xml:lang="ja">夢の記憶</title>
+<title xml:lang="en">Memory of a Dream</title>
+<title xml:lang="x-jat">Yume no Kioku</title>
+</episode>
+<episode id="144926" update="2012-10-24">
+<epno type="1">6</epno>
+<length>25</length>
+<airdate>2012-11-04</airdate>
+<title xml:lang="ja">偽りの心</title>
+<title xml:lang="en">The Deceitful Heart</title>
+<title xml:lang="x-jat">Itsuwari no Kokoro</title>
+</episode>
+<episode id="144927" update="2012-12-30">
+<epno type="1">5</epno>
+<length>25</length>
+<airdate>2012-10-28</airdate>
+<title xml:lang="ja">涙の真実</title>
+<title xml:lang="en">The Truth Behind the Tears</title>
+<title xml:lang="x-jat">Namida no Shinjitsu</title>
+</episode>
+<episode id="145680" update="2012-11-26">
+<epno type="1">9</epno>
+<length>25</length>
+<airdate>2012-11-25</airdate>
+<title xml:lang="ja">悠久の約束</title>
+<title xml:lang="en">The Eternal Promise</title>
+<title xml:lang="x-jat">Yuukyuu no Yakusoku</title>
+</episode>
+<episode id="145779" update="2012-12-02">
+<epno type="1">10</epno>
+<length>25</length>
+<airdate>2012-12-02</airdate>
+<title xml:lang="ja">カミの力</title>
+<title xml:lang="en">The Power of the Gods</title>
+<title xml:lang="x-jat">Kami no Chikara</title>
+</episode>
+<episode id="145799" update="2012-12-04">
+<epno type="1">12</epno>
+<length>25</length>
+<airdate>2012-12-16</airdate>
+<title xml:lang="ja">守護者の覚醒</title>
+<title xml:lang="en">The Guardians` Awakening</title>
+<title xml:lang="x-jat">Shugosha no Kakusei</title>
+</episode>
+<episode id="145800" update="2012-12-04">
+<epno type="1">11</epno>
+<length>25</length>
+<airdate>2012-12-09</airdate>
+<title xml:lang="ja">緋色の欠片</title>
+<title xml:lang="en">Scarlet Fragments</title>
+<title xml:lang="x-jat">Hiiro no Kakera</title>
+</episode>
+<episode id="146001" update="2012-12-16">
+<epno type="1">13</epno>
+<length>25</length>
+<airdate>2012-12-23</airdate>
+<title xml:lang="ja">永遠(とわ)の誓い</title>
+<title xml:lang="en">The Eternal Pledge</title>
+<title xml:lang="x-jat">Towa no Chikai</title>
+</episode>
+</episodes>
+</anime>
