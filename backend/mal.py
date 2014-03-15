@@ -1,6 +1,7 @@
 import requests
 import xml.etree.ElementTree as ET
 from db import DBHelper
+import myemail as email
 
 class MAL:
 
@@ -22,6 +23,7 @@ class MAL:
             for title in titles:
                 if anime.find('series_title').text in title[0]:
                     print "Found it"
+                    email.sendMail('kinga.mrugala@gmail.com', title[1])
 
     def getUsers(self):
         db = DBHelper()
