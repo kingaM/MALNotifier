@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<anime id="10065" restricted="false">
+<type>TV Series</type>
+<episodecount>0</episodecount>
+<titles>
+<title xml:lang="x-jat" type="main">Psycho-Pass 2</title>
+<title xml:lang="ja" type="official">サイコパス 2</title>
+</titles>
+<relatedanime>
+<anime id="9127" type="Prequel">Psycho-Pass</anime>
+<anime id="10066" type="Other">Gekijouban Psycho-Pass</anime>
+</relatedanime>
+<url>http://psycho-pass.com/</url>
+<picture>143193.jpg</picture>
+<resources>
+<resource type="4">
+<externalentity>
+<url>http://psycho-pass.com/</url>
+</externalentity>
+</resource>
+</resources>
+</anime>

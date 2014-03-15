@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<anime id="9603" restricted="false">
+<type>TV Series</type>
+<episodecount>24</episodecount>
+<startdate>2013-10-06</startdate>
+<titles>
+<title xml:lang="x-jat" type="main">Kuroko no Baske (2013)</title>
+<title xml:lang="en" type="synonym">Kuroko`s Basketball 2</title>
+<title xml:lang="bg" type="synonym">Баскетболът на Куроко 2</title>
+<title xml:lang="x-jat" type="synonym">Kuroko no Basuke 2</title>
+<title xml:lang="x-jat" type="short">KNB2</title>
+<title xml:lang="x-jat" type="short">knb 2</title>
+<title xml:lang="ja" type="official">黒子のバスケ (2013)</title>
+</titles>
+<relatedanime>
+<anime id="8681" type="Prequel">Kuroko no Baske</anime>
+<anime id="9991" type="Other">Kuroko no Baske: Baka ja Katenai no yo!</anime>
+</relatedanime>
+<recommendations total="1"/>
+<url>http://www.kurobas.com/</url>
+<creators>
+<name id="4410" type="Music">Ike Yoshihiro</name>
+<name id="2136" type="Direction">Tada Shunsuke</name>
+<name id="28578" type="Original Work">Fujimaki Tadatoshi</name>
+<name id="721" type="Work">Production I.G</name>
+<name id="7428" type="Series Composition">Takagi Noboru</name>
+<name id="1752" type="Character Design">Kikuchi Youko</name>
+</creators>
+<ratings>
+<permanent count="117">7.05</permanent>
+<temporary count="119">7.63</temporary>
+</ratings>
+<picture>140428.jpg</picture>
+<categories>
+<category id="21" parentid="317" hentai="false" weight="200">
+<name>School Life</name>
+<description>Since a large part of the anime audience still takes part in school life or is visiting college, it is only natural to choose a setting the audience can identify with, be it elementary, middle, or high school. For the older viewers a college setting with more mature real-life problems is appropriate. And since clubs take up so much time in the lives of students, these are obviously also important.</description>
+</category>
+<category id="239" parentid="21" hentai="false" weight="300">
+<name>High School</name>
+<description>The upper-secondary education (not compulsory in Japan) covers the grades ten, eleven, and twelve. The students are typically fifteen to eighteen years old.&#13;
+&#13;
+Anime centre on High School settings predominately: Plot/story-wise the coming of age is of interest - the students are almost adults (their bodies have matured, see ecchi anime) with more earnest, real-life problems.</description>
+</category>
+<category id="242" parentid="21" hentai="false" weight="300">
+<name>Clubs</name>
+<description>Even though school clubs in Japan are not mandatory, there is some pressure from the social grid (e.g. fellow students, teachers) to participate in some kind of after-school activity, be it in sports or arts. Colleges also have clubs.&#13;
+&#13;
+As a comedy element in anime, some students have joined too many clubs, and are thus constantly stressed out. There is also the element of social commentary, making it clear that you have to join a club, if you want to be part of the class. Since self-founded clubs need at least 3 members, the desperate search and advertising for new members can be cause for hilarity in anime.</description>
+</category>
+<category id="138" parentid="113" hentai="false" weight="600">
+<name>Basketball</name>
+<description>Basketball is Netball for men, the real game that encourages dribbling and other such uncouth behaviour that was sanitised out of the ladies` version. However, it is itself woozy compared to Ulama, as the losing side are seldom publicly sacrificed.</description>
+</category>
+<category id="273" parentid="268" hentai="false" weight="600">
+<name>Manga</name>
+<description>Manga is the lifeblood that drives the anime industry. Everything and its mother is based on manga. However! There are exceptions where the manga was not the basis for the anime.&#13;
+It`s common practice to make manga adaptations of many popular anime, there`s a manga based on Evangelion, and two (one shounen and one shoujo) based on each of Escaflowne and Mahou Tsukai Tai. Also it`s quite common to release manga and anime versions of a story in parallel, for instance Nadesico and Shoujo Kakumei Utena. There are also cases where an anime continues in a manga, as in the case of Angel Beats! and Angel Beats: Heaven`s Door, or reverse.</description>
+</category>
+<category id="5" parentid="3" hentai="false" weight="600">
+<name>Shounen</name>
+<description>In the context of manga and associated media, the word shounen refers to a male audience roughly between the ages of 10 and 18. In Japanese, the word means simply "young male", and has no anime/manga-related connotations at all. It does not comprise a style or a genre per se, but rather indicates the publisher`s intended target demographic. Still, while not mandatory, some easily identifiable traits are generally common to shounen works, such as: high-action, often humorous plots featuring male protagonists; camaraderie between male friends; sports teams and fighting squads (usually coupled with the aforementioned camaraderie); unrealistically attractive female characters (see fanservice). Additionally, the art style of shounen tends to be less flowery than that of shoujo and the plots tend to be less complex than seinen, but neither of those is a requirement.</description>
+</category>
+</categories>
+<resources>
+<resource type="1">
+<externalentity>
+<identifier>15002</identifier>
+</externalentity>
+</resource>
+<resource type="2">
+<externalentity>
+<identifier>16894</identifier>
+</externalentity>
+</resource>
+<resource type="4">
+<externalentity>
+<url>http://www.kurobas.com/</url>
+</externalentity>
+<externalentity>
+<url>http://www.production-ig.co.jp/works/kurobas-2nd/</url>
+</externalentity>
+</resource>
+<resource type="8">
+<externalentity>
+<identifier>3175</identifier>
+</externalentity>
+</resource>
+<resource type="9">
+<externalentity>
+<identifier>347015</identifier>
+</externalentity>
+</resource>
+<resource type="10">
+<externalentity>
+<identifier>14432</identifier>
+</externalentity>
+</resource>
+</resources>
+<characters>
+<character id="39487" type="main character in" update="2012-04-30">
+<rating votes="21">4.28</rating>
+<name>Kagami Taiga</name>
+<gender>male</gender>
+<charactertype id="1">Character</charactertype>
+<description>Kagami is a serious guy who grew up in America till 13. He hates how Japanese students plays basketball but decides to challenge "Kiseki no Sedai" since he believes that "You cant live a life without challenging strong opponents".
+He starts to hate kuroko since he plays extremely badly, and calls him a "bluff guy". but he changes his mind after seeing his impact in game.
+He turns on and tries harder when people make fun out of him and call him weak and often laughs when he looses to a strong person.
+even though he and Kuroko get along, he often starts a fight with him since Kuroko`s calm attitude gets on his nerves.</description>
+<picture>82679.jpg</picture>
+<seiyuu id="3155" picture="24137.jpg">Ono Yuuki</seiyuu>
+</character>
+<character id="39488" type="main character in" update="2012-05-04">
+<rating votes="38">7.30</rating>
+<name>Kuroko Tetsuya</name>
+<gender>male</gender>
+<charactertype id="1">Character</charactertype>
+<description>Kuroko (or Kurokochi as Kise calls him) is a short stiff guy who plays basketball worse than any amateur. But, he has one and only talent that makes him invincible: he has a great ability in misdirection and passing the ball, also due to his extremely small size and build (comparing to other players), he often gets ignored and therefore he can "hide" himself behind other regulars and distract them by ball movement so no one will notice he is there. the benefits of his invisible style, (as taiga calls it) makes him able to steal balls from players without them noticing he is around. He is known as the Invisible Phantom sixth of the famous group of middle schoolers, "Kiseki no Sedai".
+His Weak point is that he looses his effectiveness after 40 minutes and other players will get used to his presence.</description>
+<picture>82680.jpg</picture>
+<seiyuu id="4755" picture="27885.jpg">Ono Kenshou</seiyuu>
+</character>
+<character id="39710" type="secondary cast in" update="2012-04-28">
+<rating votes="14">6.87</rating>
+<name>Aida Riko</name>
+<gender>female</gender>
+<charactertype id="1">Character</charactertype>
+<description>Aida is a daughter of a Sports trainer and has great ability in analyzing the body of people. Hyuuga thinks she sees everything in numbers and believes in her techniques so he made her to be the couch of the club.</description>
+<picture>82684.jpg</picture>
+<seiyuu id="305" picture="37148.jpg">Saitou Chiwa</seiyuu>
+</character>
+<character id="39711" type="secondary cast in" update="2012-03-20">
+<rating votes="5">7.49</rating>
+<name>Izuki Shun</name>
+<gender>male</gender>
+<charactertype id="1">Character</charactertype>
+<picture>82682.jpg</picture>
+<seiyuu id="214" picture="17031.jpg">Nojima Hirofumi</seiyuu>
+</character>
+<character id="39713" type="secondary cast in" update="2012-03-20">
+<rating votes="9">7.28</rating>
+<name>Hyuuga Junpei</name>
+<gender>male</gender>
+<charactertype id="1">Character</charactertype>
+<picture>82681.jpg</picture>
+<seiyuu id="3709" picture="84359.jpg">Hosoya Yoshimasa</seiyuu>
+</character>
+<character id="39714" type="secondary cast in" update="2013-12-28">
+<rating votes="15">5.17</rating>
+<name>Midorima Shintarou</name>
+<gender>male</gender>
+<charactertype id="1">Character</charactertype>
+<description>Shintarou was Kiseki no Sedai`s best shooter, none of his teammates remember him to miss a shoot.
+He has a high keen to horoscopes and listens to oha saha horoscope every day and carries the lucky item they recommend. He believes that if you try hard, your fate will follow.
+He shows a huge attention to his fingers and always polishes and adjusts his nails and keeps them bandaged.
+Despite saying he dislikes Kuroko, he actually cares so deep about him (as his friend says) and always mentions that he highly respects Kuroko`s style of playing.
+It seems that he envies Kagami for being Kuroko`s new "light".</description>
+<picture>86454.jpg</picture>
+<seiyuu id="250" picture="17068.jpg">Ono Daisuke</seiyuu>
+</character>
+<character id="39715" type="secondary cast in" update="2013-12-28">
+<rating votes="21">4.95</rating>
+<name>Kise Ryouta</name>
+<gender>male</gender>
+<charactertype id="1">Character</charactertype>
+<description>Kise is a stunningly famous guy who was among Kiseki no Sedai. he has a great ability in copying the movement styles of his opponent. He works as a model for magazines due to his height and good looking face. unlike his manly looks, he has a childish manner comparing to his friends in the same age.
+Kise started basketball in the second year of middle school and is less experienced comparing to other players from Kiseki and claims to be the worst one among them. He shows high respect among Kuroko and feels sorry for him to be among the weak team of Teiko high.
+He believes that Basketball is the game of Size, but with all these, he tries to convince Kuroko to join their team.
+His Weak point is that he cant copy Kuroko`s game style and also is unable to do much when he cant see the movements of his opponent</description>
+<picture>84284.jpg</picture>
+<seiyuu id="2225" picture="21769.jpg">Kimura Ryouhei</seiyuu>
+</character>
+<character id="43564" type="secondary cast in" update="2013-12-28">
+<rating votes="5">5.78</rating>
+<name>Takao Kazunari</name>
+<gender>male</gender>
+<charactertype id="1">Character</charactertype>
+<picture>86455.jpg</picture>
+<seiyuu id="644" picture="18171.jpg">Suzuki Tatsuhisa</seiyuu>
+</character>
+<character id="43565" type="secondary cast in" update="2012-09-23">
+<rating votes="15">4.92</rating>
+<name>Momoi Satsuki</name>
+<gender>female</gender>
+<charactertype id="1">Character</charactertype>
+<description>Momoi was the manager of the basketball club in middle school. She has been in love with Kuroko since he gave her his winner ice cream stick.</description>
+<picture>90204.jpg</picture>
+<seiyuu id="157" picture="42784.jpg">Orikasa Fumiko</seiyuu>
+</character>
+<character id="45467" type="secondary cast in" update="2012-06-28">
+<rating votes="23">5.48</rating>
+<name>Aomine Daiki</name>
+<gender>male</gender>
+<charactertype id="1">Character</charactertype>
+<description>Daiki Aomine was one of the Generation of Miracles and was former partner/light of Kuroko in Teikou. Seirin suffered their first loss this season because of him. He now plays with Tohou High.</description>
+<picture>90203.jpg</picture>
+<seiyuu id="200" picture="17015.jpg">Suwabe Jun`ichi</seiyuu>
+</character>
+</characters>
+<episodes>
+<episode id="154609" update="2013-10-27">
+<epno type="1">4</epno>
+<length>25</length>
+<airdate>2013-10-27</airdate>
+<rating votes="3">4.60</rating>
+<title xml:lang="ja">答えはひとつに決まっている</title>
+<title xml:lang="en">There Is Only One Answer</title>
+<title xml:lang="fr">Une seule réponse possible</title>
+<title xml:lang="x-jat">Kotae wa Hitotsu ni Kimatte Iru</title>
+</episode>
+<episode id="154610" update="2013-11-01">
+<epno type="1">3</epno>
+<length>25</length>
+<airdate>2013-10-20</airdate>
+<rating votes="3">3.28</rating>
+<title xml:lang="ja">始動!!!</title>
+<title xml:lang="en">Start!!!</title>
+<title xml:lang="fr">Renaissance !</title>
+<title xml:lang="x-jat">Shidou!!!</title>
+</episode>
+<episode id="154611" update="2014-03-03">
+<epno type="1">2</epno>
+<length>25</length>
+<airdate>2013-10-13</airdate>
+<rating votes="3">2.12</rating>
+<title xml:lang="ja">ウインターカップで</title>
+<title xml:lang="en">At the Winter Cup</title>
+<title xml:lang="fr">Rendez-vous à la Winter Cup !</title>
+<title xml:lang="x-jat">Winter Cup de</title>
+</episode>
+<episode id="154612" update="2013-10-03">
+<epno type="1">1</epno>
+<length>25</length>
+<airdate>2013-10-06</airdate>
+<rating votes="4">2.78</rating>
+<title xml:lang="ja">こんな所で会うとはな</title>
+<title xml:lang="en">I Never Thought We`d Meet Here</title>
+<title xml:lang="fr">Une rencontre inattendue</title>
+<title xml:lang="x-jat">Konna Tokoro de Au to wa na</title>
+</episode>
+<episode id="155087" update="2013-10-15">
+<epno type="3">C2</epno>
+<length>2</length>
+<airdate>2013-10-06</airdate>
+<title xml:lang="en">Ending</title>
+</episode>
+<episode id="155088" update="2013-10-15">
+<epno type="3">C1</epno>
+<length>2</length>
+<airdate>2013-10-06</airdate>
+<title xml:lang="en">Opening</title>
+</episode>
+<episode id="155761" update="2013-11-17">
+<epno type="1">7</epno>
+<length>25</length>
+<airdate>2013-11-17</airdate>
+<rating votes="3">4.60</rating>
+<title xml:lang="ja">あきらめろ</title>
+<title xml:lang="en">Give Up</title>
+<title xml:lang="fr">Abandonne !</title>
+<title xml:lang="x-jat">Akiramero</title>
+</episode>
+<episode id="155762" update="2013-11-02">
+<epno type="1">6</epno>
+<length>25</length>
+<airdate>2013-11-10</airdate>
+<rating votes="3">3.90</rating>
+<title xml:lang="ja">とうの昔に超えている</title>
+<title xml:lang="en">I Surpassed You Long Ago</title>
+<title xml:lang="fr">Il y a un moment que je les ai dépassées</title>
+<title xml:lang="x-jat">Tou no Mukashi ni Koete Iru</title>
+</episode>
+<episode id="155763" update="2013-11-02">
+<epno type="1">5</epno>
+<length>25</length>
+<airdate>2013-11-03</airdate>
+<rating votes="3">6.23</rating>
+<title xml:lang="ja">待ってたぜ</title>
+<title xml:lang="en">I`ve Been Waiting for This</title>
+<title xml:lang="fr">On t`attendait</title>
+<title xml:lang="x-jat">Matteta ze</title>
+</episode>
+<episode id="156236" update="2013-11-20">
+<epno type="1">8</epno>
+<length>25</length>
+<airdate>2013-11-24</airdate>
+<rating votes="3">7.73</rating>
+<title xml:lang="ja">誠凛高校バスケ部だ!</title>
+<title xml:lang="en">We`re the Seirin High School Basketball Team!</title>
+<title xml:lang="fr">Le club de basket-ball du lycée Seirin !</title>
+<title xml:lang="x-jat">Seirin Koukou Baske-bu Da!</title>
+</episode>
+<episode id="156430" update="2013-11-30">
+<epno type="1">10</epno>
+<length>25</length>
+<airdate>2013-12-08</airdate>
+<rating votes="1">5.28</rating>
+<title xml:lang="ja">信頼だ</title>
+<title xml:lang="en">It`s Trust</title>
+<title xml:lang="fr">Confiance !</title>
+<title xml:lang="x-jat">Shinrai Da</title>
+</episode>
+<episode id="156431" update="2013-11-30">
+<epno type="1">9</epno>
+<length>25</length>
+<airdate>2013-12-01</airdate>
+<rating votes="1">1.88</rating>
+<title xml:lang="ja">必ず倒す!!</title>
+<title xml:lang="en">I Will Defeat You!!</title>
+<title xml:lang="fr">Je vais te battre !</title>
+<title xml:lang="x-jat">Kanarazu Taosu!</title>
+</episode>
+<episode id="156618" update="2013-12-08">
+<epno type="1">11</epno>
+<length>25</length>
+<airdate>2013-12-15</airdate>
+<rating votes="1">5.28</rating>
+<title xml:lang="ja">ふざけるな</title>
+<title xml:lang="en">Don`t Be Ridiculous</title>
+<title xml:lang="fr">Ras-le-bol</title>
+<title xml:lang="x-jat">Fuzakeruna</title>
+</episode>
+<episode id="156717" update="2013-12-15">
+<epno type="1">12</epno>
+<length>25</length>
+<airdate>2013-12-22</airdate>
+<rating votes="1">3.74</rating>
+<title xml:lang="ja">よろしゅうたのむわ</title>
+<title xml:lang="en">I Look Forward to It</title>
+<title xml:lang="fr">On compte sur votre indulgence</title>
+<title xml:lang="x-jat">Yoroshuu Tanomu wa</title>
+</episode>
+<episode id="156732" update="2013-12-16">
+<epno type="2">S1</epno>
+<length>5</length>
+<airdate>2014-01-29</airdate>
+<title xml:lang="ja">黒子のバスケNG集 1</title>
+<title xml:lang="en">Special 1</title>
+<title xml:lang="x-jat">Kuroko no Baske NG Shuu 1</title>
+</episode>
+<episode id="156823" update="2013-12-23">
+<epno type="1">13</epno>
+<length>25</length>
+<airdate>2014-01-05</airdate>
+<rating votes="1">5.93</rating>
+<title xml:lang="ja">今度はもう絶対に</title>
+<title xml:lang="en">Definitely This Time</title>
+<title xml:lang="fr">Je te le jure</title>
+<title xml:lang="x-jat">Kondo wa Mou Zettai ni</title>
+</episode>
+<episode id="157051" update="2014-01-12">
+<epno type="1">14</epno>
+<length>25</length>
+<airdate>2014-01-12</airdate>
+<rating votes="1">8.14</rating>
+<title xml:lang="ja">ムダな努力だ</title>
+<title xml:lang="en">Useless Effort</title>
+<title xml:lang="fr">Vains efforts</title>
+<title xml:lang="x-jat">Muda na Doryoku Da</title>
+</episode>
+<episode id="157275" update="2014-01-12">
+<epno type="1">15</epno>
+<length>25</length>
+<airdate>2014-01-19</airdate>
+<rating votes="1">10.00</rating>
+<title xml:lang="ja">嬉しくてしょうがないと思います</title>
+<title xml:lang="en">He`s Beside Himself with Joy</title>
+<title xml:lang="fr">Grisé</title>
+<title xml:lang="x-jat">Ureshikute Shouganai to Omoimasu</title>
+</episode>
+<episode id="157513" update="2014-01-26">
+<epno type="1">16</epno>
+<length>25</length>
+<airdate>2014-01-26</airdate>
+<rating votes="2">7.09</rating>
+<title xml:lang="ja">今勝つんだ</title>
+<title xml:lang="en">Win Now</title>
+<title xml:lang="fr">On va gagner ici et maintenant !</title>
+<title xml:lang="x-jat">Ima Katsunda</title>
+</episode>
+<episode id="157679" update="2014-01-26">
+<epno type="1">17</epno>
+<length>25</length>
+<airdate>2014-02-02</airdate>
+<rating votes="1">8.14</rating>
+<title xml:lang="ja">信じてますから</title>
+<title xml:lang="en">I Believe</title>
+<title xml:lang="fr">On croit tous en lui</title>
+<title xml:lang="x-jat">Shinjitemasu kara</title>
+</episode>
+<episode id="157828" update="2014-02-01">
+<epno type="1">18</epno>
+<length>25</length>
+<airdate>2014-02-09</airdate>
+<rating votes="2">9.19</rating>
+<title xml:lang="ja">負けるかよ</title>
+<title xml:lang="en">I Won`t Lose</title>
+<title xml:lang="fr">Je perdrai pas</title>
+<title xml:lang="x-jat">Makeru ka yo</title>
+</episode>
+<episode id="157951" update="2014-02-09">
+<epno type="1">19</epno>
+<length>25</length>
+<airdate>2014-02-16</airdate>
+<title xml:lang="ja">教えてください</title>
+<title xml:lang="en">Please Teach Me</title>
+<title xml:lang="fr">Apprends-moi</title>
+<title xml:lang="x-jat">Oshiete Kudasai</title>
+</episode>
+<episode id="158059" update="2014-02-16">
+<epno type="1">20</epno>
+<length>25</length>
+<airdate>2014-02-23</airdate>
+<title xml:lang="ja">軽いものなはずないだろう</title>
+<title xml:lang="en">Of Course it`s not Easy</title>
+<title xml:lang="fr">Comment voulez-vous que ce soit simple ?</title>
+<title xml:lang="x-jat">Karui Mono na Hazu Nai Darou</title>
+</episode>
+<episode id="158271" update="2014-03-10">
+<epno type="1">21</epno>
+<length>25</length>
+<airdate>2014-03-02</airdate>
+<title xml:lang="ja">初得点!!</title>
+<title xml:lang="en">First Basket!!</title>
+<title xml:lang="x-jat">Hatsutokuten!!</title>
+</episode>
+<episode id="158328" update="2014-03-10">
+<epno type="1">22</epno>
+<length>25</length>
+<airdate>2014-03-09</airdate>
+<title xml:lang="ja">決まってらあ</title>
+<title xml:lang="en">It`s Obvious</title>
+<title xml:lang="x-jat">Kimatteraa</title>
+</episode>
+<episode id="158383" update="2014-03-08">
+<epno type="1">23</epno>
+<length>25</length>
+<airdate>2014-03-16</airdate>
+<title xml:lang="ja">負けたくない!</title>
+<title xml:lang="en">I Don`t Want to Lose</title>
+</episode>
+<episode id="158479" update="2014-03-15">
+<epno type="1">24</epno>
+<length>25</length>
+<airdate>2014-03-23</airdate>
+<title xml:lang="ja">もういいや</title>
+<title xml:lang="en">Enough</title>
+</episode>
+</episodes>
+</anime>
