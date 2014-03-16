@@ -5,6 +5,7 @@ import myemail as email
 import os
 import json
 import notify
+import platform
 
 class MAL:
 
@@ -20,7 +21,11 @@ class MAL:
         # print r.text
 
     def parseXML(self, username, fbId=None, titles=[]):
-        tree = ET.parse(os.path.dirname(os.path.realpath('../backend/')) + '\\backend\\' + username + '.xml')
+        if platform.system() == "Windows":
+            filepath = os.path.dirname(os.path.realpath('../backend/')) + '\\backend\\' + username + '.xml'
+        else:
+            filepath = os.path.dirname(os.path.realpath('../backend/')) + '/backend/' + username + '.xml'
+        tree = ET.parse(filepath)
         # tree = ET.parse('../backend/username' + '.xml')
         root = tree.getroot()
         listOfShows = {}
@@ -31,7 +36,7 @@ class MAL:
                     # print tuple
                     # email.sendMail('kinga.mrugala@gmail.com', tuple[0], tuple[1], tuple[2], "xyz")
                     if fbId is not None:
-                        fbNotify(None, tuple[1], tuple[0])
+                        notify.fbNotify(fbId, tuple[1], tuple[0])
                     listOfShows[tuple[1]] = tuple
         for anime in root.findall('anime'):
             if anime.find('series_title').text in listOfShows.keys():
@@ -40,7 +45,11 @@ class MAL:
                     
 
     def parseAniDB(self, showId):
-        tree = ET.parse(os.path.dirname(os.path.realpath('../backend/')) + '\\backend\\xml\\' + str(showId) + '.xml')
+        if platform.system() == "Windows":
+            filepath = os.path.dirname(os.path.realpath('../backend/')) + '\\backend\\xml\\' + str(showId) + '.xml'
+        else:
+            filepath = os.path.dirname(os.path.realpath('../backend/')) + '/backend/xml/' + str(showId) + '.xml'
+        tree = ET.parse(filepath)
         root = tree.getroot()
         if root.find('startdate') is not None:
             startdate = root.find('startdate').text
