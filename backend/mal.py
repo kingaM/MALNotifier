@@ -101,7 +101,7 @@ class MAL:
 
 mal = MAL()
 if len(sys.argv) == 2:
-    print json.dumps(mal.notifyUsers([10046, 10048, 10065, 10376, 10517, 10518, 10519, 9284, 9603, 9797, 9807, 9849], sys.argv[1]))
+    print json.dumps(mal.notifyUsers([10046, 10048, 10065, 10517, 10518, 10519, 9284, 9603, 9797, 9807, 9849], sys.argv[1]))
 else:
-    print json.dumps(mal.notifyUsers([10046, 10048, 10065, 10376, 10517, 10518, 10519, 9284, 9603, 9797, 9807, 9849]))
+    print json.dumps(mal.notifyUsers([10376]))
 # mal.parseAniDB(9284)
