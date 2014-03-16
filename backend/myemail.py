@@ -1,15 +1,14 @@
 import smtplib
 
-def sendMail(recipient, showId):
+def sendMail(recipient, showtitle, airdate, description, url):
     SMTP_SERVER = 'smtp.gmail.com'
     SMTP_PORT = 587
      
     sender = 'comp3013.social.network@gmail.com'
     password = 'socialnetwork'
     subject = '[MALNotifier] A new anime was just announced'
-    body = 'The new anime is ' + str(showId)
      
-    body = "" + body + ""
+    body = createBody(showtitle, airdate, description, url)
      
     headers = ["From: " + sender,
                "Subject: " + subject,
@@ -19,7 +18,7 @@ def sendMail(recipient, showId):
     headers = "\r\n".join(headers)
      
     session = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
-     
+    
     session.ehlo()
     session.starttls()
     session.ehlo
@@ -27,3 +26,10 @@ def sendMail(recipient, showId):
      
     session.sendmail(sender, recipient, headers + "\r\n\r\n" + body)
     session.quit()
+
+
+def createBody(showTitile, airdate, description, url):
+  return """The new show that came out is <b>""" + showTitile + """</b>. It's air date is """ + airdate + """. <br><br>
+      <b>A short description:</b><br>
+      """ + description + """
+      For more information see: """ + url

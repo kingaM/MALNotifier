@@ -14,5 +14,4 @@ require_once('libs/FirePHPCore/FirePHP.class.php');
 $firephp = FirePHP::getInstance(true);
 $firephp->log($_POST);
 addUser($_POST['email'], $_POST['mal']);
-    
 ?>
