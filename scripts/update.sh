@@ -4,6 +4,7 @@ wget https://github.com/michboon/MALNotifier/archive/master.zip
 unzip master.zip
 sudo rm -rf /var/www/*
 sudo cp -r ./MALNotifier-master/www/* /var/www
+sudo chmod +x /MALNotifier-master/scripts/update.sh
 
 cd ./MALNotifier-master/scripts
 mysql -u root --password=root -e 'DROP DATABASE IF EXISTS MALNotifier;'
