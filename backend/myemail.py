@@ -1,11 +1,11 @@
 import smtplib
 
 def sendMail(recipient, showtitle, airdate, description, url):
-    SMTP_SERVER = 'smtp.gmail.com'
+    SMTP_SERVER = 'smtp.mail.yahoo.com'
     SMTP_PORT = 587
      
-    sender = 'MALNotifier.fbhackathon@gmail.com'
-    password = 'fbhackathon'
+    sender = 'malnotifier.fbhackathon@yahoo.co.uk'
+    password = 'FBHackathon1'
     subject = '[MALNotifier] A new anime was just announced'
      
     body = createBody(showtitle, airdate, description, url)
