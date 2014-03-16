@@ -1,6 +1,6 @@
 <?php
 
- require_once('database.php');
+require_once('database.php');
 
 function addUser($email, $mal, $facebook = null) {
     $db = new DatabaseHelper();
@@ -14,4 +14,5 @@ require_once('libs/FirePHPCore/FirePHP.class.php');
 $firephp = FirePHP::getInstance(true);
 $firephp->log($_POST);
 addUser($_POST['email'], $_POST['mal']);
+
 ?>
