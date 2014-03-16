@@ -10,8 +10,8 @@ sudo cp -r ./MALNotifier-master/scripts/* /var/scripts
 sudo cp -r ./MALNotifier-master/backend/* /var/backend
 sudo chmod +x ./MALNotifier-master/scripts/update.sh
 
-cd ./MALNotifier-master/scripts
-mysql -u root --password=root -e 'DROP DATABASE IF EXISTS MALNotifier;'
-mysql -u root --password=root < create_tables.sql
+# cd ./MALNotifier-master/scripts
+# mysql -u root --password=root -e 'DROP DATABASE IF EXISTS MALNotifier;'
+# mysql -u root --password=root < create_tables.sql
 
 sudo chmod -R 777 /var/www
