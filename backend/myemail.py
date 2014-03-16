@@ -4,8 +4,8 @@ def sendMail(recipient, showtitle, airdate, description, url):
     SMTP_SERVER = 'smtp.gmail.com'
     SMTP_PORT = 587
      
-    sender = 'comp3013.social.network@gmail.com'
-    password = 'socialnetwork'
+    sender = 'MALNotifier.fbhackathon@gmail.com'
+    password = 'fbhackathon'
     subject = '[MALNotifier] A new anime was just announced'
      
     body = createBody(showtitle, airdate, description, url)
