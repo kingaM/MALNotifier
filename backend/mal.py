@@ -43,7 +43,7 @@ class MAL:
                 del listOfShows[anime.find('series_title').text]
         if not first:
             for show in listOfShows.keys():
-                # email.sendMail(useremail, tuple[1], tuple[0], tuple[2], tuple[3])
+                email.sendMail(useremail, tuple[1], tuple[0], tuple[2], tuple[3])
                 if fbId is not None:
                     notify.fbNotify(int(fbId), tuple[1], tuple[0])
         return listOfShows
