@@ -1,6 +1,6 @@
 <?php
 
- require_once('database.php');
+require_once('database.php');
 
 function addUser($email, $mal, $facebook = null) {
     $db = new DatabaseHelper();
