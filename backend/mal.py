@@ -5,6 +5,8 @@ import myemail as email
 import os
 import json
 import sys
+import notify
+import platform
 
 class MAL:
 
@@ -19,9 +21,13 @@ class MAL:
         # print r.content
         # print r.text
 
-    def parseXML(self, username, titles=[]):
+    def parseXML(self, username, fbId=None, titles=[]):
+        if platform.system() == "Windows":
+            filepath = os.path.dirname(os.path.realpath('../backend/')) + '\\backend\\' + username + '.xml'
+        else:
+            filepath = os.path.dirname(os.path.realpath('../backend/')) + '/backend/' + username + '.xml'
         try:
-            tree = ET.parse(os.path.dirname(os.path.realpath('../backend/')) + '\\backend\\' + username + '.xml')
+            tree = ET.parse(filepath)
         except IOError, e:
             return None
         # tree = ET.parse('../backend/username' + '.xml')
@@ -32,17 +38,26 @@ class MAL:
                 if anime.find('series_title').text in title[0]:
                     tuple = self.parseAniDB(title[1])
                     email.sendMail('kinga.mrugala@gmail.com', tuple[0], tuple[1], tuple[2], "xyz")
+                    # print tuple
+                    # email.sendMail('kinga.mrugala@gmail.com', tuple[0], tuple[1], tuple[2], "xyz")
+                    if fbId is not None:
+                        notify.fbNotify(fbId, tuple[1], tuple[0])
                     listOfShows[tuple[1]] = tuple
         for anime in root.findall('anime'):
             if anime.find('series_title').text in listOfShows.keys():
                 del listOfShows[anime.find('series_title').text]
         for show in listOfShows.keys():
-            email.sendMail()
+            pass
+            # email.sendMail()
         return listOfShows
                     
 
     def parseAniDB(self, showId):
-        tree = ET.parse(os.path.dirname(os.path.realpath('../backend/')) + '\\backend\\xml\\' + str(showId) + '.xml')
+        if platform.system() == "Windows":
+            filepath = os.path.dirname(os.path.realpath('../backend/')) + '\\backend\\xml\\' + str(showId) + '.xml'
+        else:
+            filepath = os.path.dirname(os.path.realpath('../backend/')) + '/backend/xml/' + str(showId) + '.xml'
+        tree = ET.parse(filepath)
         root = tree.getroot()
         if root.find('startdate') is not None:
             startdate = root.find('startdate').text
@@ -63,7 +78,7 @@ class MAL:
         db = DBHelper()
         data = []
         for user in db.retrieveData("SELECT * FROM `users`"):
-            data.append(self.parseXML(user[3], titles))
+            data.append(self.parseXML(user[3], int(user[2]), titles))
 
     def notifyUsers(self, newAnime = [], user=None):
         allTitles = []
@@ -80,10 +95,10 @@ class MAL:
         # Once no mock data
         # self.getUsers(allTitles)
         if user is not None:
-            return self.parseXML(user, allTitles)
+            return self.parseXML(user, fbId=718666456, titles=allTitles)
         else:
             return self.getUsers(allTitles)
-        # return self.parseXML("chii", allTitles)
+        # return self.parseXML("chii", fbId=718666456, titles=allTitles)
 
 mal = MAL()
 if len(sys.argv) == 2:
