@@ -8,6 +8,7 @@ $(document).ready(function() {
         values['mal'] = $("#register-mal").val();
         $.post("/register.php",values, function(data) {
             console.log(data);
+            window.location.href = "/shows.html?" + values['mal'];
         });
     });   
 });

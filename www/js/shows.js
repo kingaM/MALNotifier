@@ -2,7 +2,8 @@ $(document).ready(function() {
     console.log("clicked");
     var values = {};
     values['email'] = 'xyz@example.com';
-    $.post("/shows.php",values, function(data) {
+    console.log(window.location.search.substring(1));
+    $.post("/shows.php?" + window.location.search.substring(1), values, function(data) {
         console.log(data);
         var json = $.parseJSON(data);
         var i = 0;
@@ -22,6 +23,7 @@ function addShow(show, i) {
                     "<td>" + show[1] + "</td>" +
                     "<td>" + show[0] + "</td>" +
                     "<td>" + show[2] + "</td>" +
+                    "<td><a href=\"http://anidb.net/perl-bin/animedb.pl?show=anime&aid=" + show[3] + "\">AniDB</a></td>" +
                 "</tr>";
     $("#anime-table").append(html);
 }

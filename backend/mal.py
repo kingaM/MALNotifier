@@ -4,6 +4,7 @@ from db import DBHelper
 import myemail as email
 import os
 import json
+import sys
 
 class MAL:
 
@@ -19,7 +20,10 @@ class MAL:
         # print r.text
 
     def parseXML(self, username, titles=[]):
-        tree = ET.parse(os.path.dirname(os.path.realpath('../backend/')) + '\\backend\\' + username + '.xml')
+        try:
+            tree = ET.parse(os.path.dirname(os.path.realpath('../backend/')) + '\\backend\\' + username + '.xml')
+        except IOError, e:
+            return None
         # tree = ET.parse('../backend/username' + '.xml')
         root = tree.getroot()
         listOfShows = {}
@@ -27,12 +31,13 @@ class MAL:
             for title in titles:
                 if anime.find('series_title').text in title[0]:
                     tuple = self.parseAniDB(title[1])
-                    # print tuple
-                    # email.sendMail('kinga.mrugala@gmail.com', tuple[0], tuple[1], tuple[2], "xyz")
+                    email.sendMail('kinga.mrugala@gmail.com', tuple[0], tuple[1], tuple[2], "xyz")
                     listOfShows[tuple[1]] = tuple
         for anime in root.findall('anime'):
             if anime.find('series_title').text in listOfShows.keys():
                 del listOfShows[anime.find('series_title').text]
+        for show in listOfShows.keys():
+            email.sendMail()
         return listOfShows
                     
 
@@ -52,14 +57,15 @@ class MAL:
         else:
             title = "Not available"
 
-        return (startdate, title, desc)
+        return (startdate, title, desc, showId)
 
     def getUsers(self, titles):
         db = DBHelper()
+        data = []
         for user in db.retrieveData("SELECT * FROM `users`"):
-            self.parseXML(user[3], titles)
+            data.append(self.parseXML(user[3], titles))
 
-    def notifyUsers(self, newAnime = []):
+    def notifyUsers(self, newAnime = [], user=None):
         allTitles = []
         db = DBHelper()
         if not newAnime:
@@ -73,10 +79,15 @@ class MAL:
         # print allTitles
         # Once no mock data
         # self.getUsers(allTitles)
-        return self.parseXML("chii", allTitles)
+        if user is not None:
+            return self.parseXML(user, allTitles)
+        else:
+            return self.getUsers(allTitles)
+        # return self.parseXML("chii", allTitles)
 
 mal = MAL()
-# mal.getUsers()
-# print "abc"
-print json.dumps(mal.notifyUsers([10046, 10048, 10065, 10376, 10517, 10518, 10519, 9284, 9603, 9797, 9807, 9849]))
+if len(sys.argv) == 2:
+    print json.dumps(mal.notifyUsers([10046, 10048, 10065, 10376, 10517, 10518, 10519, 9284, 9603, 9797, 9807, 9849], sys.argv[1]))
+else:
+    print json.dumps(mal.notifyUsers([10046, 10048, 10065, 10376, 10517, 10518, 10519, 9284, 9603, 9797, 9807, 9849]))
 # mal.parseAniDB(9284)
