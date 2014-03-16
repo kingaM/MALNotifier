@@ -21,7 +21,7 @@ class MAL:
         # print r.content
         # print r.text
 
-    def parseXML(self, username, fbId=None, titles=[]):
+    def parseXML(self, username, useremail, fbId=None, titles=[], first=False):
         if platform.system() == "Windows":
             filepath = os.path.dirname(os.path.realpath('../backend/')) + '\\backend\\' + username + '.xml'
         else:
@@ -36,19 +36,16 @@ class MAL:
         for anime in root.findall('anime'):
             for title in titles:
                 if anime.find('series_title').text in title[0]:
-                    tuple = self.parseAniDB(title[1])
-                    email.sendMail('kinga.mrugala@gmail.com', tuple[0], tuple[1], tuple[2], "xyz")
-                    # print tuple
-                    # email.sendMail('kinga.mrugala@gmail.com', tuple[0], tuple[1], tuple[2], "xyz")
-                    if fbId is not None:
-                        notify.fbNotify(fbId, tuple[1], tuple[0])
+                    tuple = self.parseAniDB(title[1])                    
                     listOfShows[tuple[1]] = tuple
         for anime in root.findall('anime'):
             if anime.find('series_title').text in listOfShows.keys():
                 del listOfShows[anime.find('series_title').text]
-        for show in listOfShows.keys():
-            pass
-            # email.sendMail()
+        if not first:
+            for show in listOfShows.keys():
+                # email.sendMail(useremail, tuple[1], tuple[0], tuple[2], tuple[3])
+                if fbId is not None:
+                    notify.fbNotify(int(fbId), tuple[1], tuple[0])
         return listOfShows
                     
 
@@ -78,27 +75,30 @@ class MAL:
         db = DBHelper()
         data = []
         for user in db.retrieveData("SELECT * FROM `users`"):
-            data.append(self.parseXML(user[3], int(user[2]), titles))
+            userdata = self.parseXML(user[3], user[1], user[2], titles)
+            if userdata is not None:
+                data.append(userdata)
+        return data
 
     def notifyUsers(self, newAnime = [], user=None):
         allTitles = []
         db = DBHelper()
         if not newAnime:
-            return 
+            return None
         for anime in newAnime:
             titles = db.retrieveData("SELECT title FROM titles, shows WHERE titles.showId = shows.showId AND sequel = " + str(anime))
             tmp = []
             for title in titles:
                 tmp.append(title[0])
             allTitles.append((tmp, anime,))
-        # print allTitles
-        # Once no mock data
-        # self.getUsers(allTitles)
         if user is not None:
-            return self.parseXML(user, fbId=718666456, titles=allTitles)
+            user = db.retrieveData("SELECT * FROM `users` WHERE mal = \"" + user + "\"")
+            if len(user) != 1:
+                return None
+            user = user[0]
+            return self.parseXML(user[3], user[1], fbId=user[2], titles=allTitles, first=True)
         else:
             return self.getUsers(allTitles)
-        # return self.parseXML("chii", fbId=718666456, titles=allTitles)
 
 mal = MAL()
 if len(sys.argv) == 2:

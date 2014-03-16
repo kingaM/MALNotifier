@@ -32,4 +32,5 @@ def createBody(showTitile, airdate, description, url):
   return """The new show that came out is <b>""" + showTitile + """</b>. It's air date is """ + airdate + """. <br><br>
       <b>A short description:</b><br>
       """ + description + """
-      For more information see: """ + url
+      <br><br>For more information see: <a href=\"http://anidb.net/perl-bin/animedb.pl?show=anime&aid=
+      """ + str(url) + "\">AniDB</a>"
