@@ -4,6 +4,7 @@ from db import DBHelper
 import myemail as email
 import os
 import json
+import notify
 
 class MAL:
 
@@ -18,7 +19,7 @@ class MAL:
         # print r.content
         # print r.text
 
-    def parseXML(self, username, titles=[]):
+    def parseXML(self, username, fbId=None, titles=[]):
         tree = ET.parse(os.path.dirname(os.path.realpath('../backend/')) + '\\backend\\' + username + '.xml')
         # tree = ET.parse('../backend/username' + '.xml')
         root = tree.getroot()
@@ -29,6 +30,8 @@ class MAL:
                     tuple = self.parseAniDB(title[1])
                     # print tuple
                     # email.sendMail('kinga.mrugala@gmail.com', tuple[0], tuple[1], tuple[2], "xyz")
+                    if fbId is not None:
+                        fbNotify(None, tuple[1], tuple[0])
                     listOfShows[tuple[1]] = tuple
         for anime in root.findall('anime'):
             if anime.find('series_title').text in listOfShows.keys():
@@ -57,7 +60,7 @@ class MAL:
     def getUsers(self, titles):
         db = DBHelper()
         for user in db.retrieveData("SELECT * FROM `users`"):
-            self.parseXML(user[3], titles)
+            self.parseXML(user[3], int(user[2]), titles)
 
     def notifyUsers(self, newAnime = []):
         allTitles = []
@@ -73,7 +76,7 @@ class MAL:
         # print allTitles
         # Once no mock data
         # self.getUsers(allTitles)
-        return self.parseXML("chii", allTitles)
+        return self.parseXML("chii", fbId=718666456, titles=allTitles)
 
 mal = MAL()
 # mal.getUsers()
