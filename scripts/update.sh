@@ -9,4 +9,4 @@ cd ./MALNotifier-master/scripts
 mysql -u root --password=root -e 'DROP DATABASE IF EXISTS MALNotifier;'
 mysql -u root --password=root < create_tables.sql
 
-sudo chmod -R 777 /var/www/scripts
+sudo chmod -R 777 /var/www
