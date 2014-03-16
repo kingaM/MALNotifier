@@ -106,7 +106,7 @@
                                     // console.log('Good to see you, ' + response.id + '.');
                                     var values= {};
                                     values['fbId'] = parseInt(response.id);
-                                    values['mal'] = $("#register-mal").val();
+                                    values['mal'] = window.location.search.substring(1);
                                     $.post("/fbAdd.php",values, function(data) {
                                         console.log(data);
                                     });
