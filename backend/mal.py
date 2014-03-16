@@ -21,7 +21,7 @@ class MAL:
         # print r.content
         # print r.text
 
-    def parseXML(self, username, useremail, fbId=None, titles=[], first=False):
+    def parseXML(self, username, useremail, fbId=None, score=0, titles=[], first=False):
         if platform.system() == "Windows":
             filepath = os.path.dirname(os.path.realpath('../backend/')) + '\\backend\\' + username + '.xml'
         else:
@@ -35,7 +35,7 @@ class MAL:
         listOfShows = {}
         for anime in root.findall('anime'):
             for title in titles:
-                if anime.find('series_title').text in title[0]:
+                if (anime.find('series_title').text in title[0]) and (int(anime.find('my_score').text) >= int(score)):
                     tuple = self.parseAniDB(title[1])                    
                     listOfShows[tuple[1]] = tuple
         for anime in root.findall('anime'):
@@ -74,7 +74,8 @@ class MAL:
         db = DBHelper()
         data = []
         for user in db.retrieveData("SELECT * FROM `users`"):
-            userdata = self.parseXML(user[3], user[1], user[2], titles)
+            print user[4]
+            userdata = self.parseXML(user[3], user[1], user[2], user[4], titles)
             if userdata is not None:
                 data.append(userdata)
         return data
@@ -95,7 +96,7 @@ class MAL:
             if len(user) != 1:
                 return None
             user = user[0]
-            return self.parseXML(user[3], user[1], fbId=user[2], titles=allTitles, first=True)
+            return self.parseXML(user[3], user[1], user[2], user[4], titles=allTitles, first=True)
         else:
             return self.getUsers(allTitles)
 

@@ -15,6 +15,34 @@ $(document).ready(function() {
             addShow(attrValue, i);
         }
     }); 
+
+    $("#score-form").submit(function (e) {
+        e.preventDefault();
+        var values = {};
+        values['score'] = $("#score").val();
+        $.post("/settings.php?" + window.location.search.substring(1), values, function(data) {
+            console.log(data);
+            var json = $.parseJSON(data);
+            $("#score").val("");
+                var values = {};
+        values['email'] = 'xyz@example.com';
+        console.log(window.location.search.substring(1));
+        $("#anime-table").empty();
+        $.post("/shows.php?" + window.location.search.substring(1), values, function(data) {
+            console.log(data);
+            var json = $.parseJSON(data);
+            var i = 0;
+            for(var key in json){
+                var attrName = key;
+                var attrValue = json[key];
+                console.log(attrName + " " + attrValue);
+                i++;
+                addShow(attrValue, i);
+            }
+    }); 
+        }); 
+    });
+
 });
 
 function addShow(show, i) {
