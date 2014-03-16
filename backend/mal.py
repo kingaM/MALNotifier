@@ -47,7 +47,6 @@ class MAL:
                 if fbId is not None:
                     notify.fbNotify(int(fbId), tuple[1], tuple[0])
         return listOfShows
-                    
 
     def parseAniDB(self, showId):
         if platform.system() == "Windows":
