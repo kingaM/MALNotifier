@@ -12,26 +12,13 @@ class MAL:
 
     # TODO: Fix the api
     def getXML(self, malusername):
-        headers = {
-            'User-Agent': 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.3; AskTB5.6)',        
-            }
-        payload = {'u': malusername, 'status': 'all', 'type' : 'anime'}
-        r = requests.get("http://myanimelist.net/malappinfo.php", params=payload, headers=headers)
-        # print r.url
-        # print r.content
-        # print r.text
+        r = requests.post("http://myanimelist.net/malappinfo.php?u=" + malusername + "&status=all&type=anime")
+        xml = r.text.encode('utf-8')
+        return xml
 
     def parseXML(self, username, useremail, fbId=None, score=0, titles=[], first=False):
-        if platform.system() == "Windows":
-            filepath = os.path.dirname(os.path.realpath('../backend/')) + '\\backend\\' + username + '.xml'
-        else:
-            filepath = os.path.dirname(os.path.realpath('../backend/')) + '/backend/' + username + '.xml'
-        try:
-            tree = ET.parse(filepath)
-        except IOError, e:
-            return None
-        # tree = ET.parse('../backend/username' + '.xml')
-        root = tree.getroot()
+        
+        root = ET.fromstring(self.getXML(username))
         listOfShows = {}
         for anime in root.findall('anime'):
             for title in titles:
@@ -96,13 +83,34 @@ class MAL:
             if len(user) != 1:
                 return None
             user = user[0]
-            return self.parseXML(user[3], user[1], user[2], user[4], titles=allTitles, first=True)
+            return self.parseXML(user[3], user[1], user[2], 0, titles=allTitles, first=True)
         else:
             return self.getUsers(allTitles)
 
+    def showAllForUser(self, MALname):
+        db = DBHelper()
+        root = ET.fromstring(self.getXML(MALname))
+        listOfShows = {}
+
+        for anime in root.findall('anime'):
+            title = anime.find('series_title').text.encode('utf-8')
+            sql = "SELECT shows.showId, shows.sequel FROM titles, shows WHERE titles.showId = shows.showId AND title = %s AND sequel IS NOT NULL"
+            sequel = db.retrieveData(sql, (title,))
+            if len(sequel) > 0:
+                tuple = self.parseAniDB(int(sequel[0][1]))                    
+                listOfShows[tuple[1]] = tuple
+
+        for anime in root.findall('anime'):
+            if anime.find('series_title').text in listOfShows.keys():
+                del listOfShows[anime.find('series_title').text]
+
+        return listOfShows
+
 mal = MAL()
 if len(sys.argv) == 2:
-    print json.dumps(mal.notifyUsers([10046, 10048, 10065, 10517, 10518, 10519, 9284, 9603, 9797, 9807, 9849], sys.argv[1]))
+    MALname = sys.argv[1]
+    print json.dumps(mal.showAllForUser(MALname))
 else:
-    print json.dumps(mal.notifyUsers([10376]))
+    pass
+    # print json.dumps(mal.notifyUsers([10376]))
 # mal.parseAniDB(9284)

@@ -23,7 +23,7 @@ class DBHelper:
 
     def retrieveData(self, query, args=()):
         cursor = DBHelper.con.cursor()
-        cursor.execute(query)
+        cursor.execute(query, args)
         rows = cursor.fetchall()
         cursor.close()
         return rows
