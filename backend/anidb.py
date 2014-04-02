@@ -71,13 +71,18 @@ class AniDB:
                 print "Added sequel: " + str(id)
 
     def getXML(self, id):
-        sleep(2)
-        url = "http://api.anidb.net:9001/httpapi?request=anime&client=seqwatcher&clientver=0&protover=1&aid=" + str(id)
-        r = requests.get(url)
-        xml = r.text.encode('utf-8')
         db = DBHelper()
-        db.executeQuery("UPDATE shows SET xml=%s, lastXmlUpdate=%s WHERE showId=%s", (xml, time(), id))
-        print "Updated XML for showId: " + str(id)
+        lastXmlUpdate = db.retrieveData("SELECT lastXmlUpdate FROM shows WHERE showId=%s", (id,))
+        if len(lastXmlUpdate) < 1:
+            return
+        lastXmlUpdate = lastXmlUpdate[0][0]
+        if lastXmlUpdate is None or time() - lastXmlUpdate > 604800000: # 1 week
+            sleep(2)
+            url = "http://api.anidb.net:9001/httpapi?request=anime&client=seqwatcher&clientver=0&protover=1&aid=" + str(id)
+            r = requests.get(url)
+            xml = r.text.encode('utf-8')
+            db.executeQuery("UPDATE shows SET xml=%s, lastXmlUpdate=%s WHERE showId=%s", (xml, time(), id))
+            print "Updated XML for showId: " + str(id)
 
 
 if __name__ == '__main__':
