@@ -16,6 +16,8 @@ CREATE TABLE IF NOT EXISTS `users` (
 CREATE TABLE IF NOT EXISTS `shows` (
     `showId` INT NOT NULL,
     `sequel` INT,
+    `xml` MEDIUMTEXT,
+    `lastXmlUpdate` INT,
     PRIMARY KEY(`showId`)
 );
 

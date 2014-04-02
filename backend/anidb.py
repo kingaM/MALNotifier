@@ -4,6 +4,7 @@ import os.path
 import xml.etree.ElementTree as ET
 from db import DBHelper
 from time import sleep
+from time import time
 
 class AniDB:
 
@@ -71,14 +72,14 @@ class AniDB:
 
     def getXML(self, id):
         sleep(2)
-        fname = "./xml/" + str(id) + ".xml"
-        if not os.path.isfile(fname):
-            url = "http://api.anidb.net:9001/httpapi?request=anime&client=seqwatcher&clientver=0&protover=1&aid=" + str(id)
-            xml = requests.get(url)
-            with open("./xml/" + str(id) + ".xml", "w") as f:
-                f.write(xml.text.encode('utf-8'))
+        url = "http://api.anidb.net:9001/httpapi?request=anime&client=seqwatcher&clientver=0&protover=1&aid=" + str(id)
+        r = requests.get(url)
+        xml = r.text.encode('utf-8')
+        db = DBHelper()
+        db.executeQuery("UPDATE shows SET xml=%s, lastXmlUpdate=%s WHERE showId=%s", (xml, time(), id))
+        print "Updated XML for showId: " + str(id)
 
 
 if __name__ == '__main__':
     adb = AniDB()
-    adb.addNewShows()
+    # adb.addNewShows()

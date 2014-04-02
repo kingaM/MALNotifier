@@ -36,12 +36,9 @@ class MAL:
         return listOfShows
 
     def parseAniDB(self, showId):
-        if platform.system() == "Windows":
-            filepath = os.path.dirname(os.path.realpath('../backend/')) + '\\backend\\xml\\' + str(showId) + '.xml'
-        else:
-            filepath = os.path.dirname(os.path.realpath('../backend/')) + '/backend/xml/' + str(showId) + '.xml'
-        tree = ET.parse(filepath)
-        root = tree.getroot()
+        db = DBHelper()
+        xml = db.retrieveData("SELECT xml FROM shows WHERE showId=%s", (showId,))[0][0]
+        root = ET.fromstring(xml)
         if root.find('startdate') is not None:
             startdate = root.find('startdate').text
         else:
