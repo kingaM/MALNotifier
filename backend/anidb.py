@@ -5,6 +5,7 @@ import xml.etree.ElementTree as ET
 from db import DBHelper
 from time import sleep
 from time import time
+import random
 
 class AniDB:
 
@@ -39,21 +40,7 @@ class AniDB:
                     if (lang == "en") or (lang == "x-jat"):
                         db.executeQuery("INSERT INTO titles (showId, title) VALUES (" + str(id) + ", %s)", (title.text,))
                 # Be nice with the APIs for now ... don't scrape old stuff on the first run
-                if id > 10515:
-                    self.checkSequel(id)
-
-    # No use for now trying to speed it up ... the API's don't like it
-    # threads = [None] * 20
-    # def checkSequelThread(self, id):
-    #     threads = self.threads
-    #     while True:
-    #         for x in range(0,len(threads)):
-    #             if (threads[x] is None) or (not threads[x].isAlive()):
-    #                 t = threading.Thread(target=self.checkSequel, args=[id])
-    #                 t.daemon = True
-    #                 threads[x] = t
-    #                 t.start()
-    #                 return
+                # self.checkSequel(id)
 
     def checkSequel(self, id):
         self.getXML(id)
@@ -81,10 +68,21 @@ class AniDB:
             url = "http://api.anidb.net:9001/httpapi?request=anime&client=seqwatcher&clientver=0&protover=1&aid=" + str(id)
             r = requests.get(url)
             xml = r.text.encode('utf-8')
+            if "anime id" not in xml: # check the response is valid
+                return
             db.executeQuery("UPDATE shows SET xml=%s, lastXmlUpdate=%s WHERE showId=%s", (xml, time(), id))
             print "Updated XML for showId: " + str(id)
+
+    def fillBacklog(self):
+        idList = list(range(1,10600))
+        while len(idList) > 0:
+            sleep(random.randint(5,90))
+            id = random.choice(idList)
+            self.getXML(id)
+            idList.remove(id)
 
 
 if __name__ == '__main__':
     adb = AniDB()
     # adb.addNewShows()
+    adb.fillBacklog()
