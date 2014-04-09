@@ -30,41 +30,36 @@
         
         <!-- Manual Scripts -->
         <script src="/js/register.js"></script>
-
-
     </head>
     <body>
         <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container-fluid" >
                 <div class="navbar-header" >
-                    <a class="navbar-brand" href="#">Register for MALNotifier</a>
+                    <a class="navbar-brand" href="#">MALNotifier</a>
                 </div>
             </div>
         </div>
         <div class="container-fluid" style="margin-top: 70px;">
             <div class="row">
-                <div class="col-lg-2 col-md-1"></div>
-                <div class="col-lg-8 col-md-10 main">
+                <div class="col-lg-8 col-md-10 main col-lg-offset-2 col-md-offset-1">
                     <div id="content">
                         <div id="explanation" class="col-md-12">
-                            <h4>The MALNotifier is a small application, which will send you notifications of new anime seasons when they are announced.</h4>
+                            <h4>MALNotifier lets you see any anime from your MyAnimeList you have missed and can notify you when something new comes out you'll be interested in.</h4>
                         </div>
                         <div class="col-md-12">
                             <form class="form" role="form" id="register-from">
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <label for="register-email">Email</label>
                                     <input type="email" class="form-control" id="register-email" placeholder="Enter your Email address" required>
+                                </div> -->
+                                <div class="form-inline">
+                                    <input type="text" class="form-control" id="register-mal" placeholder="MAL Username" required>
+                                    <button type="submit" class="btn btn-success" id="register-btn">Submit</button>
                                 </div>
-                                <div class="form-group">
-                                    <label for="register-mal">MyAnimeList</label>
-                                    <input type="text" class="form-control" id="register-mal" placeholder="Enter your MyAnimeList username" required>
-                                </div>
-                                <button type="submit" class="btn btn-success" id="register-btn">Register</button>
                             </form>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-1"></div>
             </div>
         </div>
     </body>

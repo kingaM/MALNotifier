@@ -43,11 +43,13 @@ class AniDB:
                 # self.checkSequel(id)
 
     def checkSequel(self, id):
-        self.getXML(id)
-        if not os.path.isfile("./xml/" + str(id) + ".xml"):
+        # self.getXML(id)
+        db = DBHelper()
+        xml = db.retrieveData("SELECT xml FROM shows WHERE showId=%s AND xml IS NOT NULL", (id,))
+        if len(xml) < 1:
             return
-        tree = ET.parse("./xml/" + str(id) + ".xml")
-        root = tree.getroot()
+        xml = xml[0][0]
+        root = ET.fromstring(xml)
         if root.find("relatedanime") is None:
             return
         for anime in root.find("relatedanime"):
@@ -81,8 +83,12 @@ class AniDB:
             self.getXML(id)
             idList.remove(id)
 
+    def checkAllSequels(self):
+        for x in range(1,10600):
+            self.checkSequel(x)
+
 
 if __name__ == '__main__':
     adb = AniDB()
     # adb.addNewShows()
-    adb.fillBacklog()
+    adb.checkAllSequels()

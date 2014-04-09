@@ -4,11 +4,12 @@ $(document).ready(function() {
         e.preventDefault();
         console.log("clicked");
         values= {};
-        values['email'] = $("#register-email").val();
+        // values['email'] = $("#register-email").val();
         values['mal'] = $("#register-mal").val();
-        $.post("/register.php",values, function(data) {
-            console.log(data);
-            window.location.href = "/shows.html?" + values['mal'];
-        });
+        // $.post("/register.php",values, function(data) {
+        //     console.log(data);
+        //     window.location.href = "/shows.html?" + values['mal'];
+        // });
+        window.location.href = "/shows.html?" + values['mal'];
     });   
 });
