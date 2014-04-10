@@ -1,5 +1,12 @@
 $(document).ready(function() {
-    console.log("clicked");
+    
+    $("#ratingSlider").slider({
+        tooltip: 'hide',
+        formater: function(value) {
+            return 'Current value: ' + value;
+        }
+    });
+
     var values = {};
     values['email'] = 'xyz@example.com';
     console.log(window.location.search.substring(1));
@@ -12,7 +19,7 @@ $(document).ready(function() {
             var attrValue = json[key];
             console.log(attrName + " " + attrValue);
             i++;
-            addShow(attrValue, i);
+            displayShow(attrValue, i);
         }
     }); 
 
@@ -37,7 +44,7 @@ $(document).ready(function() {
                 var attrValue = json[key];
                 console.log(attrName + " " + attrValue);
                 i++;
-                addShow(attrValue, i);
+                displayShow(attrValue, i);
             }
     }); 
         }); 
@@ -45,13 +52,15 @@ $(document).ready(function() {
 
 });
 
-function addShow(show, i) {
+function displayShow(show, i) {
+    var description = show[2]
+    if(description.length > 200) {
+        description = description.substring(0, 200) + " ..."
+    }
     var html = "<tr>" +
-                    "<td>" + i + "</td>" +
-                    "<td>" + show[1] + "</td>" +
+                    "<td><a href=\"http://anidb.net/perl-bin/animedb.pl?show=anime&aid=" + show[3] + "\">" + show[1] + "</a></td>" +
                     "<td>" + show[0] + "</td>" +
-                    "<td>" + show[2] + "</td>" +
-                    "<td><a href=\"http://anidb.net/perl-bin/animedb.pl?show=anime&aid=" + show[3] + "\">AniDB</a></td>" +
+                    "<td>" + description + "</td>" +
                 "</tr>";
     $("#anime-table").append(html);
 }
