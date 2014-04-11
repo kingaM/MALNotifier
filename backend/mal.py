@@ -35,6 +35,7 @@ class MAL:
                     notify.fbNotify(int(fbId), tuple[1], tuple[0])
         return listOfShows
 
+    #TODO: Move this info to the DB rather than parse it each time
     def parseAniDB(self, showId):
         db = DBHelper()
         xml = db.retrieveData("SELECT xml FROM shows WHERE showId=%s", (showId,))[0][0]

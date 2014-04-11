@@ -48,17 +48,17 @@
                 <h4>Options:</h4>
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox"> OVA
+                        <input type="checkbox" id="ovaCheck"> OVA
                     </label>
                 </div>
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox"> Unaired
+                        <input type="checkbox" id="unairedCheck"> Unaired
                     </label>
                 </div>
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox"> Only for shows rated above:
+                        <input type="checkbox" id="ratingCheck"> Only for shows rated above: <span id="ratingCheckText"></span>
                     </label>
                     <div id="ratingSlider"></div>
                 </div>
@@ -83,7 +83,7 @@
             <div class="col-lg-2 col-md-1">
                 <h4>Register for updates:</h4>
 
-                <form>
+                <form id="registerForm">
                     <div class="form-group">
                         <input type="email" class="form-control" id="email" placeholder="Email">
                     </div>
